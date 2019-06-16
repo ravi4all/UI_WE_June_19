@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Form Handling</h1>
+
+    <fieldset>
+        <legend>Registration Form</legend>
+        <!-- GET AND POST -->
+        <form action="login.html" method="post">
+            <label for="username">Enter Name :</label>
+            <input type="text" id="username" name="u_name">
+            <br><br>
+            <label for="useremail">Enter Email :</label>
+            <input type="text" id="useremail" name="u_email">
+            <br><br>
+            <label for="userpwd">Enter Password :</label>
+            <input type="password" id="userpwd" name="u_pwd">
+            <br><br> Select Country
+            <select>
+                <!-- <option>Select Country</option>
+                <option value="ind">India</option>
+                <option value="ch">China</option>
+                <option value="rus">Russia</option>
+                <option value="it">Italy</option>
+                <option value="fr">France</option> -->
+                <option>Select Country</option>
+                <optgroup label="Asia">
+                    <option value="">India</option>
+                    <option value="">Srilanka</option>
+                    <option value="">China</option>
+                    <option value="">Nepal</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="">England</option>
+                    <option value="">France</option>
+                    <option value="">Germany</option>
+                    <option value="">Italy</option>
+                </optgroup>
+            </select>
+            <br><br> Select Gender
+            <input type="radio" name="gender" value="m"> Male
+            <input type="radio" name="gender" value="f"> Female
+            <br><br> Select Course
+            <input type="checkbox"> Btech
+            <input type="checkbox"> Mtech
+            <input type="checkbox"> BCA
+            <input type="checkbox"> MCA
+            <br><br>
+            <input type="submit">
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
