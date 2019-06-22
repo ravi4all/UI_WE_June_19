@@ -1,0 +1,35 @@
+body {
+    margin: 0px;
+    background-image: url("http://www.wallpaperstalk.com/wp-content/uploads/2019/04/imTiOEQ4b.jpg");
+    background-size: 100% 100%;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div {
+    height: 600px;
+    background-size: 100% 100%;
+    margin-bottom: 500px;
+    background-attachment: fixed;
+}
+
+#div_1 {
+    background-image: url("http://hdqwalls.com/wallpapers/iron-man-infinity-gauntlet-6t.jpg");
+}
+
+#div_2 {
+    background-image: url("https://wallpapersite.com/images/pages/ico_n/18042.jpg");
+}
+
+#div_3 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJQEyeXjoTYNlBjFGtT9OsbA0WSS0X9nnWpEwt4fEU3nM4SF8r");
+}
+
+#div_4 {
+    background-image: url("https://images3.alphacoders.com/969/969585.jpg");
+}
+
+#div_5 {
+    background-image: url("http://wallpaperask.com/wp-content/uploads/Arc-Reactor-Iron-Man-Wallpaper-Widescreen-758x426.jpg");
+}

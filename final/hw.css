@@ -1,0 +1,110 @@
+#level4{
+    background-image: url("road-sky-clouds-cloudy.jpg");
+        background-repeat: no-repeat;
+ 
+    background-size: auto;
+   background-size: 100% 100%;
+    margin: 0px;
+
+}
+
+.l4{
+    height:2000px;
+    width:100%;
+    margin = 0px;
+     background-position: bottom;
+    background-attachment: fixed;
+}
+#id_1{
+    background-image: url("fighter-01.png");
+    background-repeat: repeat-x;
+    background-size: 10%;
+    
+}
+#id_2{
+    background-image: url("fighter-01.png");
+    background-repeat: repeat-x;
+    background-size: 20%;
+    
+    
+}
+
+#id_3{
+    background-image: url("fighter-01.png");
+    background-repeat:repeat-x;
+    background-size: 25%;
+    
+}
+#id_4{
+    background-image: url("fighter-01.png");
+    background-repeat: no-repeat;
+    background-size: 30%;
+    
+}
+#level3{background-image: url("3a1a9a981897e2fd85239cd22852cfca.jpg");
+        background-repeat: no-repeat;
+ 
+    background-size: auto;
+   background-size: 100% 100%;
+    margin: 0px;
+
+    
+}
+.l3{
+    height:2000px;
+    width:100%;
+    margin = 0px;
+     background-position: bottom;
+    background-attachment: fixed;
+    background-image: url("fighter-01.png");
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+#level2{background-image: url("iss044-e-610.jpg");
+        background-repeat: no-repeat;
+ 
+    background-size: auto;
+   background-size: 100% 100%;
+    margin: 0px;
+}
+.img1{margin-top: 2000px;
+    margin-left: 600px;
+    height: 300px;
+    width:300px;
+    
+}
+.img2{margin-left: 100px;
+    margin-top: 500px;
+    height: 300px;
+    width:300px;
+    float: left;
+    
+}
+#img32{margin-top: 400px;
+    height:100px;
+    width:100px;
+    margin-left: 150px
+}
+#img31{height:200px;
+    margin-top: 400px;
+    width:200px;}
+#level1{background-image: url("stock-vector-highway-traffic-concept-with-top-view-cars-and-trucks-on-asphalt-road-vector-illustration-313697264%20(2).jpg");
+        background-repeat: no-repeat;
+ 
+    background-size: auto;
+   background-size: 100% 100%;
+    margin: 0px;
+}
+.l1{
+    height:2000px;
+    width:100%;
+    margin = 0px;
+     background-position: bottom;
+    background-attachment: fixed;
+    background-image: url("Untitled.png");
+    background-repeat: no-repeat;
+    background-size: 10%;
+}
+#final{
+    margin-left: 38%;
+}

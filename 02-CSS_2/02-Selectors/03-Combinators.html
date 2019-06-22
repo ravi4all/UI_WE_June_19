@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* #parent .child h2 {
+            color: red;
+        } */
+        
+        #parent>h2 {
+            color: blue;
+        }
+        
+        #parent+h2 {
+            color: green;
+        }
+        
+        #parent~div h1 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Combinators</h1>
+    <div id="parent">
+        <h2>This heading is inside parent</h2>
+        <h2>This heading is inside parent</h2>
+        <div class="child">
+            <h2>This heading is inside child</h2>
+            <h2>This heading is inside child</h2>
+        </div>
+        <h2>This heading is inside parent</h2>
+        <h2>This heading is inside parent</h2>
+    </div>
+    <hr>
+    <h2>This heading is outside parent element</h2>
+    <h2>This heading is outside parent element</h2>
+
+    <div>
+        <h1>This is also a heading</h1>
+    </div>
+
+</body>
+
+</html>
