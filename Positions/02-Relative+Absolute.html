@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            border: 10px solid red;
+            padding: 80px;
+        }
+        
+        img {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+        /* .innerchild_2 {
+            position: relative;
+        } */
+        /* .innerchild {
+            position: relative;
+        } */
+        
+        #parent {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Relative + Absolute</h1>
+    <div id="parent">
+        <h2>This is inside parent div</h2>
+        <div class="innerchild">
+            <h2>This is inside inner child</h2>
+            <div class="innerchild_2">
+                <h2>This is inside inner child_2</h2>
+                <img src="../../images/hulk5-18463.gif" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+h2 {
+    margin: 0px;
+}
+
+#header {
+    /* border: 2px solid red; */
+    background-color: lightgray;
+    padding: 20px;
+}
+
+#header:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.logo {
+    float: left;
+    width: 15%;
+}
+
+.search {
+    float: right;
+    width: 40%;
+    text-align: center;
+}
+
+.search input[type='text'] {
+    width: 75%;
+    height: 35px;
+}
