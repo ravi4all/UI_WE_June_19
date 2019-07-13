@@ -1,0 +1,29 @@
+#parent:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#parent {
+    background-color: gray;
+}
+
+.col-1 {
+    background-color: lightblue;
+    width: 40%;
+    float: left;
+}
+
+.col-2 {
+    background-color: lightcoral;
+    width: 40%;
+    float: left;
+}
+
+.blank {
+    clear: both;
+}
+
+.div_1 {
+    background-color: greenyellow;
+}

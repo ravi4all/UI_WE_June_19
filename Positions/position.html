@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            /* width: 50%; */
+        }
+        
+        #header {
+            background-color: lightsalmon;
+            text-align: center;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: 1;
+        }
+        
+        img {
+            /* width: 50%; */
+        }
+        
+        #content {
+            margin-top: 100px;
+            border: 10px solid red;
+            padding: 80px;
+            position: relative;
+        }
+        
+        .child {
+            border: 10px solid red;
+            padding: 80px;
+        }
+        
+        .innerchild {
+            border: 10px solid red;
+            padding: 80px;
+            position: relative;
+        }
+        
+        .child {
+            position: relative;
+        }
+        
+        .innerchild img {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--  Types of Position
+    Fixed
+    Absolute
+    Relative
+    Static
+    Sticky -->
+
+    <div id="header">
+        <h1>Position Fixed</h1>
+    </div>
+
+    <div id="content">
+        <h2>This heading is inside content</h2>
+        <div class="child">
+            <h2>This heading is inside child</h2>
+            <div class="innerchild">
+                <h2>This heading is inside inner child</h2>
+                <img src="../../images/logo.png" alt="">
+                <h2>This heading is inside inner child</h2>
+            </div>
+        </div>
+    </div>
+
+    <img src="../../images/WebImages/Terminator002.jpg" alt="">
+    <img src="../../images/WebImages/Terminator002.jpg" alt="">
+    <img src="../../images/WebImages/Terminator002.jpg" alt="">
+
+</body>
+
+</html>
