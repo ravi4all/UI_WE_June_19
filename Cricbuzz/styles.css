@@ -1,0 +1,41 @@
+body {
+    margin: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#header {
+    background-color: #009270;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+#main-navigation ul li {
+    display: inline-block;
+}
+
+#main-navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}

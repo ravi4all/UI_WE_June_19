@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        
+        li {
+            display: inline-block;
+            background-color: lightgray;
+            margin: 0px 5px;
+            text-align: center;
+            /* padding: 10px 0px; */
+            width: 12%;
+            position: relative;
+        }
+        
+        a {
+            text-decoration: none;
+            padding: 10px 0px;
+            display: block;
+        }
+        
+        li:hover {
+            background-color: lightsalmon;
+        }
+        
+        .dropdown {
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            display: none;
+        }
+        
+        ul li:hover .dropdown {
+            display: block;
+        }
+        
+        .dropdown li {
+            display: block;
+            background-color: lightgray;
+            text-align: center;
+            width: 100%;
+            margin: 0px;
+        }
+        
+        .col {
+            display: inline-block;
+            width: 32%;
+            background-color: lightslategray;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Navbar</h1>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Electronics</a></li>
+        <li>
+            <a href="#">Sports</a>
+            <div class="dropdown">
+                <!-- ul>li*6>a -->
+                <ul>
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Hockey</a></li>
+                    <li><a href="#">Tennis</a></li>
+                    <li><a href="#">Volleyball</a></li>
+                    <li><a href="#">Chess</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Clothes</a></li>
+        <li>
+            <a href="#">Watch</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Hockey</a></li>
+                    <li><a href="#">Tennis</a></li>
+                    <li><a href="#">Volleyball</a></li>
+                    <li><a href="#">Chess</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="#">Shoes</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Hockey</a></li>
+                    <li><a href="#">Tennis</a></li>
+                    <li><a href="#">Volleyball</a></li>
+                    <li><a href="#">Chess</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">More</a></li>
+    </ul>
+
+    <div class="col-1 col">
+        <h2>This is column_1</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tempore tenetur eligendi deleniti expedita nihil aliquid omnis voluptatem quisquam recusandae. Voluptatibus corrupti maxime suscipit quas accusantium iure reprehenderit voluptates at.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Sit eos, mollitia unde expedita dolore repudiandae laborum explicabo deleniti consequuntur debitis eum a suscipit eveniet, iste obcaecati beatae eligendi!
+        </p>
+    </div>
+    <div class="col-2 col">
+        <h2>This is column_2</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tempore tenetur eligendi deleniti expedita nihil aliquid omnis voluptatem quisquam recusandae. Voluptatibus corrupti maxime suscipit quas accusantium iure reprehenderit voluptates at.
+        </p>
+    </div>
+    <div class="col-3 col">
+        <h2>This is column_3</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tempore tenetur eligendi deleniti expedita nihil aliquid omnis voluptatem quisquam recusandae. Voluptatibus corrupti maxime suscipit quas accusantium iure reprehenderit voluptates at.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet. Sit eos, mollitia unde expedita dolore repudiandae laborum explicabo deleniti consequuntur debitis eum a suscipit eveniet, iste obcaecati beatae eligendi!
+        </p>
+    </div>
+
+</body>
+
+</html>
