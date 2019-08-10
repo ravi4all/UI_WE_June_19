@@ -1,0 +1,53 @@
+#row {
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    align-items: flex-start;
+    /* align-items: flex-end; */
+}
+
+.col-1,
+.col-2,
+.col-3 {
+    background-color: lightgray;
+    /* margin: 0px 10px; */
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+.col-1 {
+    width: 18%;
+    /* align-self: flex-end; */
+}
+
+.col-2 {
+    width: 40%;
+}
+
+.col-3 {
+    width: 18%;
+    /* align-self: center; */
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    justify-content: space-around;
+}
+
+li {
+    border: 2px solid #000;
+    width: 300px;
+    margin-bottom: 20px;
+    height: 200px;
+    background-image: url("../../images/dhoni.jpg");
+    background-size: 100% 100%;
+}
