@@ -1,0 +1,164 @@
+/* Global Settings */
+
+body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+}
+
+
+/* Helper Classes */
+
+
+/* Floating */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+/* Clearfix */
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* Width 100% for images and other tags*/
+
+.w-100 {
+    width: 100%;
+}
+
+#topbar {
+    background-color: #000;
+}
+
+#topbar span {
+    font-size: 13px;
+    color: #fff;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+
+#topbar i {
+    color: #2FDAB8;
+    font-size: 12px;
+}
+
+#topbar .row {
+    justify-content: space-between;
+}
+
+#topbar .col {
+    border-right: 1px solid #888;
+    text-align: center;
+    width: 25%;
+    padding: 5px 0px;
+}
+
+#header {}
+
+#header .row {
+    justify-content: space-between;
+}
+
+#header .col-1 {
+    width: 67%;
+}
+
+#header .col-2 {
+    width: 25%;
+}
+
+#header .search {
+    width: 52%;
+}
+
+#header .logo {
+    width: 47%;
+}
+
+#header .search input[type='text'] {
+    width: 80%;
+    height: 45px;
+    letter-spacing: 1px;
+    padding-left: 10px;
+}
+
+#header .search button {
+    color: #fff;
+    background-color: #2FDAB8;
+    height: 45px;
+    width: 15%;
+    font-size: 24px;
+    border: none;
+    vertical-align: middle;
+}
+
+#header .logo h1 {
+    font-size: 45px;
+    font-weight: 300;
+    position: relative;
+}
+
+#header .logo h1 a {
+    color: #000;
+    font-weight: 300;
+}
+
+#header .logo h1 a span {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 12px 15px;
+    font-weight: 900;
+    line-height: 38px;
+}
+
+#header .logo h1 .bag {
+    position: absolute;
+    bottom: -12px;
+    right: 74px;
+    font-size: 18px;
+    color: #2FDAB8;
+}
