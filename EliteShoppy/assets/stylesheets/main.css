@@ -337,8 +337,8 @@ h6 {
     color: #fff;
     background-color: #17C3A2;
     display: inline-block;
-    width: 12%;
-    padding: 10px;
+    /* width: 12%; */
+    padding: 7px 12px;
     letter-spacing: 3px;
     position: relative;
 }
@@ -398,7 +398,7 @@ h6 {
 }
 
 #section_1 {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 #section_1 .col {
@@ -429,4 +429,124 @@ h6 {
 #section_1 .col:hover:after,
 #section_1 .col:hover:before {
     transform: translate(0%, 0%);
+}
+
+#section_2 {
+    margin-bottom: 50px;
+}
+
+#section_2 h2 {
+    text-align: center;
+    font-size: 38px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+#section_2 h2 span {
+    font-weight: bolder;
+}
+
+#section_2 .row {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tabs ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tabs ul li {
+    width: 25%;
+    padding: 12px 0px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.tabs ul li.active {
+    background-color: #FC636B;
+    position: relative;
+}
+
+.tabs ul li.active:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    border: 8px solid;
+    left: 46%;
+    border-color: #FC636B transparent transparent;
+}
+
+.product {
+    text-align: center;
+    width: 22%;
+    padding-bottom: 40px;
+    box-shadow: 0px 0px 20px 2px lightgray;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.product .img {
+    padding: 40px 40px 20px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: 1s;
+}
+
+.product .img img {
+    transition: 1s;
+}
+
+.product:hover .img img {
+    /* background-color: #F7F7F7; */
+    transform: rotateY(180deg);
+}
+
+.product:hover .img {
+    background-color: #F7F7F7;
+}
+
+.product .img .view {
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    left: 0px;
+    bottom: 100%;
+    padding: 10px 0px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.product:hover .img .view {
+    bottom: 0px;
+    opacity: 1;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product .desc h4 a {
+    color: #FC636B;
+}
+
+.product .desc p span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.product .btn {
+    width: 80%;
+    padding: 3px;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
