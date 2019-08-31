@@ -1,0 +1,49 @@
+What is Javascript ?
+
+Client + Server Side scripting language
+
+Netscape
+
+Static - Nexus
+
+Javascript = Self + Scheme (by - Brendon Eich)
+- built in 10 days
+Dynamic - Mosaic
+
+Mocha
+Livescript
+Javascript
+
+Jscript
+
+ECMA - European Computer Manufacture Association
+ECMAScript - ES5,6,7,8,9
+
+Mozilla
+mdn
+
+Features of Javascript
+- Interpreted Language
+- Event Driven
+- Multi-Purpose
+- Dynamically Typed
+- Loosely(Weakely) Typed
+- Multi-Paradigm - Procedural + OOPS + Functional
+
+- functions are first class citizens
+
+JS Runs on V8 Engine
+
+
+
+
+
+
+
+
+
+
+
+
+
+

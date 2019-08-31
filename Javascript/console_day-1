@@ -1,0 +1,136 @@
+a = 12;
+12
+b = 21;
+21
+a + b
+33
+c = a + b
+33
+c
+33
+typeof(a)
+"number"
+a = "hello"
+"hello"
+typeof(a)
+"string"
+a = "10";
+"10"
+a + 10
+"1010"
+10 + a
+"1010"
+10 + 10 + a
+"2010"
+a + 10 + 10
+"101010"
+a * 10
+100
+a - 10
+0
+a  / 10
+1
+b = 10
+10
+typeof(a)
+"string"
+typeof(b)
+"number"
+a == b
+true
+a === b
+false
+function add() {
+	
+}
+undefined
+function add(){
+	x = 10;
+	y = 12;
+	z = x + y;
+	console.log(z);
+}
+undefined
+add()
+VM614:5 22
+undefined
+z = x - y
+-2
+function add(){
+	var x1 = 10;
+	var y1 = 12;
+	var z1 = x1 + y1;
+	console.log(z1);
+}
+undefined
+add()
+VM695:5 22
+undefined
+z1 = x1 - y1
+VM750:1 Uncaught ReferenceError: x1 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM750:1
+var arr = [4,5,6,3,6,8,7];
+undefined
+typeof(arr);
+"object"
+arr instanceof Array
+true
+arr instanceof Object
+true
+Array instanceof Object
+true
+s1 = new String("hello world");
+String {"hello world"}
+s2 = "hello world"
+"hello world"
+typeof(s1)
+"object"
+typeof(s2)
+"string"
+s1 == s2
+true
+s1 === s2
+false
+x = 10
+10
+typeof(x)
+"number"
+arr
+(7) [4, 5, 6, 3, 6, 8, 7]
+arr instanceof Array
+true
+x instanceof Number
+false
+x = new Number(10);
+Number {10}__proto__: Numberconstructor: ƒ Number()toExponential: ƒ toExponential()toFixed: ƒ toFixed()toLocaleString: ƒ toLocaleString()toPrecision: ƒ toPrecision()toString: ƒ toString()valueOf: ƒ valueOf()__proto__: Object[[PrimitiveValue]]: 0[[PrimitiveValue]]: 10
+x instanceof Number
+true
+x instanceof Object
+true
+Number instanceof Object
+true
+typeof(Object)
+"function"
+Date()
+"Sat Aug 31 2019 17:55:04 GMT+0530 (India Standard Time)"
+arr
+(7) [4, 5, 6, 3, 6, 8, 7]0: 41: 52: 63: 34: 65: 86: 7length: 7__proto__: Array(0)concat: ƒ concat()constructor: ƒ Array()copyWithin: ƒ copyWithin()entries: ƒ entries()every: ƒ every()fill: ƒ fill()filter: ƒ filter()find: ƒ find()findIndex: ƒ findIndex()flat: ƒ flat()flatMap: ƒ flatMap()forEach: ƒ forEach()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()lastIndexOf: ƒ lastIndexOf()length: 0map: ƒ map()pop: ƒ pop()push: ƒ push()reduce: ƒ reduce()reduceRight: ƒ reduceRight()reverse: ƒ reverse()shift: ƒ shift()slice: ƒ slice()some: ƒ some()sort: ƒ sort()splice: ƒ splice()toLocaleString: ƒ toLocaleString()toString: ƒ toString()unshift: ƒ unshift()values: ƒ values()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {copyWithin: true, entries: true, fill: true, find: true, findIndex: true, …}__proto__: Object
+window
+Window {postMessage: ƒ, blur: ƒ, focus: ƒ, close: ƒ, parent: Window, …}
+navigator
+Navigator {vendorSub: "", productSub: "20030107", vendor: "Google Inc.", maxTouchPoints: 0, hardwareConcurrency: 4, …}
+navigator.appCodeName
+"Mozilla"
+navigator.appName
+"Netscape"
+navigator.vendor
+"Google Inc."
+navigator.appVersion
+"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+navigator.geolocation.getCurrentPosition(function(pos){
+	alert(pos.coords.latitude+pos.coords.longitude);
+})
+VM1821:1 [Deprecation] getCurrentPosition() and watchPosition() no longer work on insecure origins. To use this feature, you should consider switching your application to a secure origin, such as HTTPS. See https://goo.gl/rStTGz for more details.
+(anonymous) @ VM1821:1
+undefined
