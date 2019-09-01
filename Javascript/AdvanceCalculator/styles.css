@@ -1,0 +1,25 @@
+table {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#box {
+    width: 98%;
+    height: 40px;
+    font-size: 20px;
+    padding: 5px;
+    text-align: right;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: blue;
+    border: none;
+    color: #fff;
+}
+
+button:hover {
+    background-color: red;
+}
