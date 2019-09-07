@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid red;
+            margin-bottom: 80px;
+        }
+        
+        #img_1 {
+            height: 550px;
+            overflow: hidden;
+        }
+        
+        #img img {
+            width: 100%;
+            height: inherit;
+            transition: 2s;
+            /* transform: scale(1.5, 1.5); */
+        }
+        
+        #div_1 {
+            display: flex;
+            justify-content: space-around;
+            overflow: hidden;
+        }
+        
+        #div_1 .col {
+            width: 30%;
+        }
+        
+        #div_1 img {
+            width: 100%;
+        }
+        
+        .col-1 {
+            transform: translateX(-150%);
+            transition: 1s;
+        }
+        
+        .col-2 {
+            transform: translateX(150%);
+            transition: 1s;
+        }
+        
+        #div_1.animate .col-1,
+        #div_1.animate .col-2 {
+            transform: translateX(0%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Mouse Events</h1>
+
+    <!-- <div id="div_1" onmouseover="changeImage(this)" onmouseout="changeImage_2(this)">
+        <img src="../../images/hulk5-18463.gif" alt="">
+    </div> -->
+
+    <!-- <div id="img">
+        <img src="../../images/WebImages/thor-chris-hemsworth.jpg" alt="" onmousemove="animation(this)">
+    </div> -->
+
+    <div id="img_1">
+        <img id="img" src="../../images/WebImages/thor-chris-hemsworth.jpg" alt="">
+    </div>
+
+    <div id="div_1">
+        <div class="col col-1">
+            <img src="../../images/WebImages/dhoni_img.jpg" alt="">
+        </div>
+        <div class="col col-2">
+            <img src="../../images/WebImages/dhoni_img.jpg" alt="">
+        </div>
+    </div>
+
+    <script>
+        // function changeImage(div) {
+        //     div.innerHTML = '<img src="../../images/hulk-bigpunch.gif" alt="">';
+        // }
+
+        // function changeImage_2(div) {
+        //     div.innerHTML = '<img src="../../images/hulk5-18463.gif" alt="">';
+        // }
+
+        window.addEventListener("scroll", function() {
+            var scrollPos = window.scrollY;
+            // console.log(scrollPos);
+            if (scrollPos > 550) {
+                document.querySelector("#div_1").className = 'animate';
+            } else {
+                document.querySelector("#div_1").className = '';
+            }
+
+            var img = document.querySelector("#img");
+            img.style.transform = 'scale(' + (scrollPos + 100) * 0.01 + ',' + (scrollPos + 100) * 0.01 + ')';
+        })
+
+        function animation(obj) {
+            var mouseX = event.clientX;
+            var mouseY = event.clientY;
+            // console.log(mouseX, mouseY);
+            obj.style.transform = 'translate(' + mouseX * 0.5 + 'px' + ',' + mouseY * 0.2 + 'px' + ') scale(1.5,1.5)';
+            // obj.style.backgroundPositionX = mouseX * 0.02 + 'px';
+        }
+    </script>
+
+</body>
+
+</html>
