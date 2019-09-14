@@ -1,0 +1,53 @@
+audio {
+    width: 100%;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#songList li {
+    width: 24%;
+    list-style: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#playList {
+    display: block;
+    text-align: left;
+}
+
+#playList li {
+    width: 100%;
+    list-style: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+
+#playList li img {
+    height: 50px;
+    width: 20%;
+    margin-right: 0px;
+}
+
+#playList span {
+    display: inline-block;
+    width: 50%;
+    padding-top: 10px;
+}
+
+img {
+    width: 100%;
+    height: 200px;
+}
