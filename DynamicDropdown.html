@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Dynamic Dropdown</h1>
+
+    <select id="countries">
+        <option>Select Country</option>
+    </select>
+    <select id="state">
+        <option>Select State</option>
+    </select>
+
+    <script>
+        var select = document.querySelector("#countries");
+        select.addEventListener("change", selectState);
+        data = [{
+                "india": ["bihar", "delhi", "up", "uk", "kerala"],
+            }, {
+                "germany": ["xyz", "abc", "def", "ghi"],
+            }, {
+                "france": ["france_1", "france_2", "france_3"]
+            }]
+            // for (item in data) {
+            //     var option = document.createElement("option");
+            //     option.innerHTML = item;
+            //     select.appendChild(option);
+            // }
+
+        for (var i = 0; i < data.length; i++) {
+            for (item in data[i]) {
+                var option = document.createElement("option");
+                option.innerHTML = item;
+                select.appendChild(option);
+            }
+        }
+
+        function selectState() {
+            // console.log(select.value);
+            var stateList = document.querySelector("#state");
+            stateList.innerHTML = "";
+            var cntry = select.value;
+            console.log(cntry);
+            for (var i = 0; i < data.length; i++) {
+                for (item in data[i]) {
+                    if (item == select.value) {
+                        states = data[i];
+                        break
+                    }
+                }
+            }
+            console.log(states[cntry]);
+            for (var i = 0; i < states[cntry].length; i++) {
+                var option = document.createElement("option");
+                option.innerHTML = states[cntry][i];
+                stateList.appendChild(option);
+            }
+        }
+    </script>
+</body>
+
+</html>
