@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .row {
+            display: flex;
+        }
+        
+        .col {
+            background-color: lightgray;
+            border: 2px solid red;
+            padding: 10px;
+        }
+        
+        img {
+            transition: 2s;
+        }
+        
+        img.animate {
+            transform: translateX(300px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>DOM Traversing</h1>
+
+    <div class="row">
+        <div class="col-1 col">
+            <h2>This is column_1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sapiente harum voluptas. Dicta voluptatem reiciendis adipisci animi unde eveniet dolores officiis dolorum sint accusamus quam, aperiam explicabo, sed ipsam! Molestiae.
+            </p>
+            <img src="../images/hulk5-18463.gif" alt="">
+            <button>Click Me</button>
+        </div>
+        <div class="col-2 col">
+            <h2>This is column_2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sapiente harum voluptas. Dicta voluptatem reiciendis adipisci animi unde eveniet dolores officiis dolorum sint accusamus quam, aperiam explicabo, sed ipsam! Molestiae.
+            </p>
+            <img src="../images/hulk5-18463.gif" alt="">
+            <button>Click Me</button>
+        </div>
+    </div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $("button").click(function() {
+            // $(this).parent().hide(1000);
+            // $(this).parents().hide(1000);
+            // $(this).parentsUntil("body").hide(1000);
+            // $(this).siblings("p").hide(1000);
+            // $(this).parents(".row").find(".col-1 img").hide(1000);
+            // $(this).parent().siblings(".col-1").find("img").hide(1000);
+            $(this).prev("img").toggleClass("animate");
+        })
+    </script>
+</body>
+
+</html>

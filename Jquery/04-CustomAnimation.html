@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            position: relative;
+        }
+        
+        img {
+            width: 20%;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Jquery Effects</h1>
+
+    <!-- 3 effect by jquery
+    FadeIn/FadeOut
+    Hide/Show
+    SlideUp/SlideDown -->
+
+    <button id="btn">Animate</button>
+    <hr>
+    <div>
+        <img src="../images/WebImages/dhoni_img.jpg" alt="">
+    </div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        var img = $("img");
+        $("#btn").on("click", function() {
+            img.animate({
+                "left": '300px',
+            });
+            img.animate({
+                "top": '100px'
+            });
+            img.animate({
+                "top": '100px',
+                "left": '0px',
+            });
+            img.animate({
+                "top": '0px',
+                'left': '0px'
+            });
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Jquery Effects</h1>
+
+    <!-- 3 effect by jquery
+    FadeIn/FadeOut
+    Hide/Show
+    SlideUp/SlideDown -->
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle Animation</button>
+    <hr>
+    <div>
+        <img src="../images/WebImages/dhoni_img.jpg" alt="">
+    </div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        // $("#hide").on("click", function() {
+        //     $("div img").hide(2000);
+        // });
+        // $("#show").on("click", function() {
+        //     $("div img").show(2000);
+        // });
+        // $("#toggle").on("click", function() {
+        //     $("div img").toggle(2000);
+        // });
+
+        // $("#hide").on("click", function() {
+        //     $("div img").fadeOut(2000);
+        // });
+        // $("#show").on("click", function() {
+        //     $("div img").fadeIn(2000);
+        // });
+        // $("#toggle").on("click", function() {
+        //     $("div img").fadeToggle(2000);
+        // });
+
+        $("#hide").on("click", function() {
+            $("div img").slideUp(2000);
+        });
+        $("#show").on("click", function() {
+            $("div img").slideDown(2000);
+        });
+        $("#toggle").on("click", function() {
+            $("div img").slideToggle(2000);
+        });
+    </script>
+</body>
+
+</html>

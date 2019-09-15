@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            list-style: none;
+        }
+        
+        ul li {
+            width: 30%;
+            margin-bottom: 20px;
+            background-color: lightgray;
+            padding: 10px;
+        }
+        
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Jquery AJAX</h1>
+
+    <button>Load Data</button>
+    <div id="content">
+        <ul id="list">
+
+        </ul>
+    </div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        var ul = $("#list");
+        $("button").click(function() {
+            $.get("https://newsapi.org/v2/everything?q=bitcoin&from=2019-08-15&sortBy=publishedAt&apiKey=695e07af402f4b119f0703e9b19f4683", function(data) {
+                var articles = data.articles;
+                articles.forEach(function(obj) {
+                    var li = document.createElement("li");
+                    var h3 = document.createElement("h3");
+                    h3.innerHTML = obj.title;
+                    var img = document.createElement("img");
+                    img.src = obj.urlToImage;
+                    var p = document.createElement("p");
+                    p.innerHTML = obj.description;
+                    li.appendChild(h3);
+                    li.appendChild(img);
+                    li.appendChild(p);
+                    ul.append(li);
+                })
+            })
+
+            // $.ajax({
+            //     url : "",
+            //     method : "",
+            //     success:function(data) {
+            //     }
+            // })
+
+        })
+    </script>
+</body>
+
+</html>
